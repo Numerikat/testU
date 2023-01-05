@@ -13,7 +13,6 @@ import styled from 'styled-components/macro'
 import { Bag } from './Bag'
 import { ChainSelector } from './ChainSelector'
 import { MenuDropdown } from './MenuDropdown'
-import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
 
 const MobileBottomBar = styled.div`
@@ -105,14 +104,7 @@ const Navbar = () => {
               <PageTabs />
             </Row>
           </Box>
-          <Box className={styles.middleContainer} alignItems="flex-start">
-            <SearchBar />
-          </Box>
-          <Box className={styles.rightSideContainer}>
-            <Row gap="12">
-              <Box position="relative" display={{ sm: 'flex', xl: 'none' }}>
-                <SearchBar />
-              </Box>
+          
               <Box display={{ sm: 'none', lg: 'flex' }}>
                 <MenuDropdown />
               </Box>
